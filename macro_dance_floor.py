@@ -226,6 +226,257 @@ st.markdown(
     div[data-testid="stDataFrame"] {
         padding-top: 8px;
     }
+    /* ============================================================
+   PORTFOLIO HIVE + BACKTESTER MOBILE READABILITY FIX
+   Desktop / PC layout remains unchanged.
+   Applies only on mobile screens.
+   ============================================================ */
+
+@media (max-width: 768px) {
+
+    .block-container {
+        padding-top: 2.7rem !important;
+        padding-left: 0.85rem !important;
+        padding-right: 0.85rem !important;
+        padding-bottom: 3rem !important;
+        max-width: 100% !important;
+    }
+
+    .main-title,
+    .premium-title {
+        font-size: 1.95rem !important;
+        line-height: 1.25 !important;
+        letter-spacing: -0.025em !important;
+        padding-top: 0.45rem !important;
+        padding-bottom: 0.25rem !important;
+        margin-top: 0.4rem !important;
+        margin-bottom: 0.25rem !important;
+        overflow: visible !important;
+        white-space: normal !important;
+        word-break: normal !important;
+        color: #111827 !important;
+        -webkit-text-fill-color: initial !important;
+        background: none !important;
+    }
+
+    .sub-title,
+    .premium-subtitle {
+        font-size: 0.95rem !important;
+        line-height: 1.6 !important;
+        color: #374151 !important;
+        margin-bottom: 1.1rem !important;
+        white-space: normal !important;
+    }
+
+    .premium-hero,
+    .bee-box,
+    .mode-box,
+    .dialogue-card,
+    .nav-radio-card,
+    .backtest-hero,
+    .info-card,
+    .warning-card,
+    .compare-card {
+        padding: 15px 14px !important;
+        border-radius: 20px !important;
+        margin-bottom: 14px !important;
+        min-height: auto !important;
+        overflow: visible !important;
+        background-color: rgba(255,255,255,0.97) !important;
+        color: #111827 !important;
+    }
+
+    .premium-hero h2,
+    .backtest-hero h2,
+    .info-card h4,
+    .compare-card h4,
+    .mode-box h4,
+    .dialogue-title,
+    .section-header,
+    h1, h2, h3, h4 {
+        font-size: 1.20rem !important;
+        line-height: 1.35 !important;
+        color: #111827 !important;
+        -webkit-text-fill-color: initial !important;
+        background: none !important;
+        white-space: normal !important;
+        word-break: normal !important;
+    }
+
+    .premium-hero p,
+    .backtest-hero p,
+    .info-card,
+    .warning-card,
+    .compare-card p,
+    .dialogue-body,
+    .small-muted,
+    p,
+    li,
+    label,
+    .stMarkdown,
+    .stCaption,
+    div[data-testid="stCaptionContainer"],
+    div[data-testid="stMarkdownContainer"] {
+        font-size: 0.90rem !important;
+        line-height: 1.58 !important;
+        color: #374151 !important;
+        -webkit-text-fill-color: initial !important;
+        white-space: normal !important;
+        word-break: normal !important;
+    }
+
+    .pill,
+    .period-chip {
+        font-size: 0.72rem !important;
+        line-height: 1.25 !important;
+        padding: 6px 9px !important;
+        margin-right: 5px !important;
+        margin-bottom: 6px !important;
+        white-space: normal !important;
+    }
+
+    .period-chip {
+        background: #111827 !important;
+        color: #FFF3BF !important;
+    }
+
+    div[data-testid="stMetric"] {
+        padding: 12px 11px !important;
+        border-radius: 18px !important;
+        overflow: visible !important;
+    }
+
+    div[data-testid="stMetricLabel"] {
+        font-size: 0.76rem !important;
+        line-height: 1.25 !important;
+        color: #4B5563 !important;
+        white-space: normal !important;
+    }
+
+    div[data-testid="stMetricValue"] {
+        font-size: 1.20rem !important;
+        line-height: 1.25 !important;
+        color: #111827 !important;
+        white-space: normal !important;
+        overflow-wrap: anywhere !important;
+    }
+
+    div[data-testid="stRadio"] label,
+    div[data-testid="stCheckbox"] label,
+    div[data-testid="stSelectbox"] label,
+    div[data-testid="stDateInput"] label {
+        color: #111827 !important;
+        font-size: 0.90rem !important;
+        line-height: 1.35 !important;
+        white-space: normal !important;
+    }
+
+    div[data-testid="stRadio"] p,
+    div[data-testid="stCheckbox"] p {
+        color: #111827 !important;
+        font-size: 0.88rem !important;
+        line-height: 1.35 !important;
+    }
+
+    div.stButton > button,
+    div.stDownloadButton > button {
+        min-height: 2.75rem !important;
+        font-size: 0.84rem !important;
+        line-height: 1.25 !important;
+        white-space: normal !important;
+        padding: 0.65rem 0.75rem !important;
+    }
+
+    div[data-testid="stTextArea"] textarea,
+    div[data-testid="stTextInput"] input {
+        font-size: 0.92rem !important;
+        color: #111827 !important;
+        background: rgba(255,255,255,0.98) !important;
+    }
+
+    .premium-table-wrap {
+        border-radius: 18px !important;
+        max-height: 520px !important;
+        overflow: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+    }
+
+    table.premium-table {
+        font-size: 0.76rem !important;
+        min-width: 820px !important;
+    }
+
+    table.premium-table thead th,
+    table.premium-table tbody td {
+        padding: 10px 10px !important;
+        line-height: 1.38 !important;
+        color: #111827 !important;
+        white-space: normal !important;
+    }
+
+    .badge {
+        font-size: 0.66rem !important;
+        padding: 5px 8px !important;
+        white-space: normal !important;
+    }
+
+    div[data-testid="stPlotlyChart"],
+    div[data-testid="stVegaLiteChart"] {
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+    }
+
+    div[data-testid="stPlotlyChart"] > div,
+    div[data-testid="stVegaLiteChart"] > div {
+        min-width: 640px !important;
+    }
+
+    div[data-testid="stAlert"] {
+        font-size: 0.90rem !important;
+        line-height: 1.55 !important;
+        color: #111827 !important;
+    }
+
+    /* IMPORTANT: keeps Streamlit sidebar arrow working */
+    section[data-testid="stSidebar"] {
+        display: block !important;
+    }
+
+    section[data-testid="stSidebar"] textarea,
+    section[data-testid="stSidebar"] input {
+        color: #111827 !important;
+        background: rgba(255,255,255,0.98) !important;
+        font-size: 0.90rem !important;
+    }
+
+    section[data-testid="stSidebar"] label,
+    section[data-testid="stSidebar"] p,
+    section[data-testid="stSidebar"] .stCaption {
+        color: rgba(255,255,255,0.96) !important;
+        font-size: 0.88rem !important;
+        line-height: 1.4 !important;
+        white-space: normal !important;
+    }
+}
+
+@media (max-width: 420px) {
+
+    .main-title,
+    .premium-title {
+        font-size: 1.65rem !important;
+        line-height: 1.25 !important;
+    }
+
+    table.premium-table {
+        font-size: 0.70rem !important;
+        min-width: 760px !important;
+    }
+
+    div[data-testid="stPlotlyChart"] > div,
+    div[data-testid="stVegaLiteChart"] > div {
+        min-width: 600px !important;
+    }
+}
     </style>
     """,
     unsafe_allow_html=True,
