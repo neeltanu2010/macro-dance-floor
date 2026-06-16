@@ -7,6 +7,9 @@
 
 import pandas as pd
 import streamlit as st
+from common.protect_tool import require_tool_access
+
+user = require_tool_access("macro-dance-floor")
 
 st.set_page_config(
     page_title="Macro Dance Floor",
